@@ -1,0 +1,10 @@
+print("================================")
+print("     ECE ENGINEERING TOOLKIT")
+print("================================")
+
+print("1. Ohm's Law")
+print("2. Power Calculator")
+print("3. Resistance Calculator")
+print("4. Frequency / Time Period")
+print("5. Signal Analyzer")
+print("6. Exit")
