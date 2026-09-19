@@ -8,3 +8,18 @@ print("3. Resistance Calculator")
 print("4. Frequency / Time Period")
 print("5. Signal Analyzer")
 print("6. Exit")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("\n--- Ohm's Law Calculator ---")
+
+    voltage = float(input("Enter voltage (V): "))
+    resistance = float(input("Enter resistance (Ohm): "))
+
+    current = voltage / resistance
+
+    print("Current =", current, "A")
+
+else:
+    print("This feature will be added soon!")
