@@ -12,21 +12,32 @@ while True:
     print("5. Signal Analyzer")
     print("6. Exit")
 
+try:
     choice = int(input("Enter your choice: "))
+except ValueError:
+    print("Invalid input! Please enter a number.")
+    continue
 
     if choice == 1:
         print("\n--- Ohm's Law Calculator ---")
 
-        voltage = float(input("Enter voltage (V): "))
-        resistance = float(input("Enter resistance (Ohm): "))
+       try:
+    voltage = float(input("Enter voltage (V): "))
+    resistance = float(input("Enter resistance (Ohm): "))
 
+    if resistance == 0:
+        print("Resistance cannot be zero!")
+    else:
         current = voltage / resistance
-
         print("Current =", current, "A")
 
-    elif choice == 2:
-        print("\n--- Power Calculator ---")
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
 
+   elif choice == 2:
+    print("\n--- Power Calculator ---")
+
+    try:
         voltage = float(input("Enter voltage (V): "))
         current = float(input("Enter current (A): "))
 
@@ -34,49 +45,67 @@ while True:
 
         print("Power =", power, "W")
 
+    except ValueError:
+        print("Invalid input! Please enter numbers only.")
     elif choice == 3:
-        print("\n--- Resistance Calculator ---")
+    print("\n--- Resistance Calculator ---")
 
+    try:
         voltage = float(input("Enter voltage (V): "))
         current = float(input("Enter current (A): "))
 
-        resistance = voltage / current
+        if current == 0:
+            print("Current cannot be zero!")
+        else:
+            resistance = voltage / current
+            print("Resistance =", resistance, "Ohm")
 
-        print("Resistance =", resistance, "Ohm")
+    except ValueError:
+        print("Invalid input! Please enter numbers only.")
 
     elif choice == 4:
-        print("\n--- Frequency / Time Period ---")
-        print("1. Calculate Time Period")
-        print("2. Calculate Frequency")
+    print("\n--- Frequency / Time Period ---")
+    print("1. Calculate Time Period")
+    print("2. Calculate Frequency")
 
+    try:
         sub_choice = int(input("Enter your choice: "))
 
         if sub_choice == 1:
             frequency = float(input("Enter frequency (Hz): "))
 
-            time_period = 1 / frequency
-
-            print("Time Period =", time_period, "seconds")
+            if frequency == 0:
+                print("Frequency cannot be zero!")
+            else:
+                time_period = 1 / frequency
+                print("Time Period =", time_period, "seconds")
 
         elif sub_choice == 2:
             time_period = float(input("Enter time period (seconds): "))
 
-            frequency = 1 / time_period
-
-            print("Frequency =", frequency, "Hz")
+            if time_period == 0:
+                print("Time period cannot be zero!")
+            else:
+                frequency = 1 / time_period
+                print("Frequency =", frequency, "Hz")
 
         else:
             print("Invalid choice!")
 
+    except ValueError:
+        print("Invalid input! Please enter numbers only.")
     elif choice == 5:
-        print("\n--- Signal Analyzer ---")
+    print("\n--- Signal Analyzer ---")
 
+    try:
         peak_voltage = float(input("Enter peak voltage (V): "))
 
         rms_voltage = peak_voltage / math.sqrt(2)
 
         print("RMS Voltage =", rms_voltage, "V")
 
+    except ValueError:
+        print("Invalid input! Please enter a number.")
     elif choice == 6:
         print("\nThank you for using ECE Engineering Toolkit!")
         break
