@@ -21,5 +21,15 @@ if choice == 1:
 
     print("Current =", current, "A")
 
+elif choice == 2:
+    print("\n--- Power Calculator ---")
+
+    voltage = float(input("Enter voltage (V): "))
+    current = float(input("Enter current (A): "))
+
+    power = voltage * current
+
+    print("Power =", power, "W")
+
 else:
     print("This feature will be added soon!")
