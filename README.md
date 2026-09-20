@@ -2,11 +2,11 @@ ECE Engineering Toolkit
 
 A Python-based toolkit designed for Electronics and Communication Engineering (ECE) students.
 
-📌 Project Description
+ Project Description ; 
 
 ECE Engineering Toolkit is a beginner-friendly Python project that combines Python programming with basic ECE concepts. It provides calculators for common electrical and electronics calculations and a basic signal analyzer.
 
-🚀 Features
+* Features
 1. Ohm's Law Calculator
 
 Calculates current using I = V / R
@@ -51,9 +51,10 @@ Where R is resistance and X is reactance.
 
 Handles invalid inputs and prevents common errors such as division by zero.
 
-🛠️ Technologies Used
+ Technologies Used
 Python
 GitHub
+
 ▶️ How to Run
 Install Python.
 Download or clone this repository.
