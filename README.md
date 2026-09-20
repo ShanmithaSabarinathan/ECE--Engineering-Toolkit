@@ -1,107 +1,80 @@
-# ECE Engineering Toolkit
+ECE Engineering Toolkit
 
-A Python-based toolkit designed for Electronics and Communication Engineering (ECE) students to perform common electrical and electronics calculations.
+A Python-based toolkit designed for Electronics and Communication Engineering (ECE) students.
 
-## 📌 Project Description
+📌 Project Description
 
-ECE Engineering Toolkit is a beginner-friendly Python project that combines programming with basic ECE concepts. It provides several calculators for electrical and electronics calculations along with a basic signal analyzer.
+ECE Engineering Toolkit is a beginner-friendly Python project that combines Python programming with basic ECE concepts. It provides calculators for common electrical and electronics calculations and a basic signal analyzer.
 
-## 🚀 Features
+🚀 Features
+1. Ohm's Law Calculator
 
-### 1. Ohm's Law Calculator
+Calculates current using I = V / R
 
-Calculates current using:
+2. Power Calculator
 
-**I = V / R**
+Calculates electrical power using P = V × I
 
-Where:
-- V = Voltage
-- R = Resistance
-- I = Current
+3. Resistance Calculator
 
-### 2. Power Calculator
+Calculates resistance using R = V / I
 
-Calculates electrical power using:
+4. Frequency / Time Period Calculator
 
-**P = V × I**
+Calculates frequency and time period using:
 
-### 3. Resistance Calculator
+T = 1 / f
 
-Calculates resistance using:
+f = 1 / T
 
-**R = V / I**
-
-### 4. Frequency / Time Period Calculator
-
-Calculates time period using:
-
-**T = 1 / f**
-
-Calculates frequency using:
-
-**f = 1 / T**
-
-### 5. Signal Analyzer
+5. Signal Analyzer
 
 Calculates:
 
-- Peak Voltage
-- RMS Voltage
-- Peak-to-Peak Voltage
+Peak Voltage
+RMS Voltage
+Peak-to-Peak Voltage
 
-RMS voltage:
+RMS voltage: Vrms = Vpeak / √2
 
-**Vrms = Vpeak / √2**
+Peak-to-Peak voltage: Vpp = 2 × Vpeak
 
-Peak-to-Peak voltage:
+6. Impedance Calculator
 
-**Vpp = 2 × Vpeak**
+Calculates impedance using:
 
-### 6. Impedance Calculator
+Z = √(R² + X²)
 
-Calculates impedance for a basic AC circuit using:
+Where R is resistance and X is reactance.
 
-**Z = √(R² + X²)**
+7. Input Validation
 
-Where:
-- R = Resistance
-- X = Reactance
-- Z = Impedance
+Handles invalid inputs and prevents common errors such as division by zero.
 
-### 7. Input Validation
-
-The program handles invalid inputs and prevents common calculation errors such as division by zero.
-
-## 🛠️ Technologies Used
-
-- Python
-- GitHub
-
-## ▶️ How to Run
-
-1. Install Python.
-2. Download or clone this repository.
-3. Open the project folder.
-4. Run the following command:
-
-```bash
-python main.py
+🛠️ Technologies Used
+Python
+GitHub
+▶️ How to Run
+Install Python.
+Download or clone this repository.
+Open the project folder.
+Run python main.py
 📂 Project Structure
-ECE--Engineering-Toolkit/
-│
+
+ECE--Engineering-Toolkit
 ├── main.py
 └── README.md
+
 🎯 Purpose
 
-This project was developed as a beginner-friendly ECE programming project to apply Python programming concepts to practical electronics calculations.
+This project applies Python programming concepts to practical Electronics and Communication Engineering calculations.
 
 🔮 Future Enhancements
 Capacitor and Inductor Reactance Calculator
 Resonance Frequency Calculator
 Decibel Calculator
 More signal analysis features
-Graphical user interface
+Graphical User Interface
 
-
- Author
+Author
 Shanmitha S
