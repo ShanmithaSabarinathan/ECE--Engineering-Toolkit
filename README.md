@@ -86,3 +86,21 @@ The program handles invalid inputs and prevents common calculation errors such a
 
 ```bash
 python main.py
+📂 Project Structure
+ECE--Engineering-Toolkit/
+│
+├── main.py
+└── README.md
+🎯 Purpose
+
+This project was developed as a beginner-friendly ECE programming project to apply Python programming concepts to practical electronics calculations.
+
+🔮 Future Enhancements
+Capacitor and Inductor Reactance Calculator
+Resonance Frequency Calculator
+Decibel Calculator
+More signal analysis features
+Graphical user interface
+👩‍💻 Author
+
+Shanmitha S
