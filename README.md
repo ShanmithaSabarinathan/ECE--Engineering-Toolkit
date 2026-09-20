@@ -101,6 +101,7 @@ Resonance Frequency Calculator
 Decibel Calculator
 More signal analysis features
 Graphical user interface
-👩‍💻 Author
 
+
+ Author
 Shanmitha S
